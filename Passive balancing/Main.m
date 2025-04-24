@@ -21,6 +21,8 @@ V_DC_STR                = 10;                   % Reference DC voltage
 parms.Vout_control.Ki   = 0.035*20;             % integral gain
 parms.Vout_control.Kp   = 0.15*10;              % proportional gain
 
+% out = sim("Cell_Balancing.slx");
+rl;
 out = sim("Cell_Balancing.slx");
 %% Plots
 set(figure(1),'position',[100 200 600 600])
